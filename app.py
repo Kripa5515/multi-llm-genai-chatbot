@@ -4,8 +4,25 @@ warnings.filterwarnings('ignore')
 import streamlit as st
 from llm_providers import run_llm
 
-st.set_page_config(page_title="My First AI Chat Assistant", page_icon="🤖")
-st.title("🤖 My First AI Chat Assistant")
+st.set_page_config(
+    page_title="AI Chatbot Studio",
+    page_icon="🧠",
+    layout="centered"
+)
+
+# Header & Subtitle
+st.title("🧠 Next-Gen AI Workspace")
+st.markdown("Your intelligent conversational companion for instant problem solving & reasoning.")
+
+# Collapsible Info Box for Visitors
+with st.expander("ℹ️ About this Application"):
+    st.write("""
+    - **Dynamic Routing:** Switches seamlessly between OpenAI & Google Gemini via backend configurations.
+    - **Context Memory:** Maintains full session context for multi-turn conversations.
+    - **Configurable LLM Params:** Fine-tuned `temperature`, `top_p`, and token limits.
+    """)
+
+st.markdown("---")
 
 # Initialize conversation memory
 if "history" not in st.session_state:
