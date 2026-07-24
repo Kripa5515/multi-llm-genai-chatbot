@@ -31,9 +31,11 @@ An interactive AI Chatbot built with Python and Streamlit that dynamically route
 
 4. Environment Configuration:
   Create a .env file in the root directory (refer to .env.example):
+
   OPENAI_API_KEY=your_openai_api_key
+  
   GEMINI_API_KEY=your_gemini_api_key
 
-5. Run the Streamlit App:
+6. Run the Streamlit App:
    streamlit run app.py
   
