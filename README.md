@@ -26,7 +26,7 @@ An interactive AI Chatbot built with Python and Streamlit that dynamically route
    # On Windows:
    myenv\Scripts\activate
 
-3. Install dependencies
+3. Install dependencies:
    pip install -r requirements.txt
 
 4. Environment Configuration:
